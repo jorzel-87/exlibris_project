@@ -1,0 +1,14 @@
+version: '3'
+services:
+  apache-exl:
+    image: exlibris-apache-compose-img:1.0
+    ports:
+      - 5555:5555
+    volumes:
+      - ./config-files/my-httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - ./config-files/httpd-vhosts.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf
+    restart: always
+    container_name: apache-exl
+
+networks:
+  exlibris_network:
