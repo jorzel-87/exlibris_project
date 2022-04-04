@@ -1,0 +1,616 @@
+[ec2-user@ip-172-31-42-44 ~]$ history
+    1  sudo yum update
+    2  sudo yum install docker
+    3  docker ps
+    4  sudo systemctl enable docker.service
+    5  sudo systemctl start docker.service
+    6  docker ps
+    7  sudo docker ps
+    8  sudo usermod -aG docker ${USER}
+    9  docker ps
+   10  cat /etc/group | grep docker
+   11  docker ps
+   12  history
+   13  wget https://github.com/docker/compose/releases/latest/download/docker-co                                                                                                                     mpose-$(uname -s)-$(uname -m)
+   14  sudo mv docker-compose-$(uname -s)-$(uname -m) /usr/local/bin/docker-comp                                                                                                                     ose
+   15  sudo chmod -v +x /usr/local/bin/docker-compose
+   16  docker-compose
+   17  docker pull httpd:2.4.53
+   18  docker images
+   19  docker-compose --version
+   20  docker run --rm httpd:2.4.53 cat /usr/local/apache2/conf/httpd.conf > my-                                                                                                                     httpd.conf
+   21  ls
+   22  docker ps
+   23  ls
+   24  vim my-httpd.conf
+   25  ls
+   26  mkdir exlibris_project
+   27  mv my-httpd.conf exlibris_project/.
+   28  ls exlibris_project/
+   29  cd exlibris_project/
+   30  ls
+   31  mkdir apache
+   32  mv my-httpd.conf apache/.
+   33  cd apache/
+   34  ls
+   35  vim Dockerfile
+   36  ls
+   37  cat Dockerfile
+   38  vim my-httpd.conf
+   39  cat d
+   40  cat Dockerfile
+   41  docker build -t exlibris-apache .
+   42  #docker run -dit --name exlibris-apache-v1 -p 80:80 exlibris-apache
+   43  docker run -d -it --name container --mount type=bind,source=/nginxconfig,                                                                                                                     target=/etc/nginx \
+   44  pwd
+   45  ls
+   46  cat Dockerfile
+   47  docker run -dit --name my-running-app -p 8080:80 exlibris-apache
+   48  docker ps
+   49  ss -pln
+   50  ss -pln | grep 80
+   51  docker ps
+   52  docker stop my-running-app
+   53  docker ps
+   54  docker run -dit --name my-running-app -p 80:80 exlibris-apache
+   55  docker rm "af0d2ec71154805c0b45fbe5c9e5357a9bc1921a5193a13634b5632c2f576b                                                                                                                     bf".
+   56  docker rm "af0d2ec71154805c0b45fbe5c9e5357a9bc1921a5193a13634b5632c2f576b                                                                                                                     bf"
+   57  docker run -dit --name my-running-app -p 80:80 exlibris-apache
+   58  docker ps
+   59  docker stop my-running-app
+   60  docker ls
+   61  docker
+   62  docker run -dit --name my-running-app -p 80:80 exlibris-apache
+   63  docker run -dit --rm --name my-running-app -p 80:80 exlibris-apache
+   64  docker rm "b482c8a4118b1c6e3c29548f58deb4696863088960f8ad52db4967247f3180                                                                                                                     8a"
+   65  docker run -dit --rm --name my-running-app -p 80:80 exlibris-apache
+   66  docker ps
+   67  docker exec -it exlibris-apache bash
+   68  docker exec -it my-running-app bash
+   69  docker stop my-running-app
+   70  docker ps
+   71  docker run -dit --rm --name my-running-app -p 5555:80 exlibris-apache
+   72  docker ps
+   73  ss -pln
+   74  docker ps
+   75  docker stop my-running-app
+   76  ls
+   77  vim my-httpd.conf
+   78  docker ps
+   79  docker run -dit --rm --name my-running-app -p 5555:80 exlibris-apache
+   80  docker ps
+   81  docekr exec -it my-running-app bash
+   82  docker exec -it my-running-app bash
+   83  docker ps
+   84  vim my-httpd.conf
+   85  docker exec -it my-running-app bash
+   86  vim my-httpd.conf
+   87  ls
+   88  vim Dockerfile
+   89  pwd
+   90  ls
+   91  ls -la
+   92  chmod 0644 feeds.json
+   93  ls -la
+   94  vim my-httpd.conf
+   95  vim Dockerfile
+   96  docker ps
+   97  docker stop my-running-app
+   98  ls
+   99  docker images ls
+  100  docker build -t exlibris-apache .
+  101  cat Dockerfile
+  102  docker run -dit --rm --name exlibris-apache-v1 -p 5555:5555 exlibris-apac                                                                                                                     he
+  103  docker ps
+  104  docker run -dit --rm --name exlibris-apache-v1 -p 80:80 exlibris-apache
+  105  docker ps
+  106  cat Dockerfile
+  107  vim Dockerfile
+  108  docker build -t exlibris-apache .
+  109  docker run -dit --rm --name exlibris-apache-v1 -p 80:80 exlibris-apache
+  110  docker ps
+  111  vim Dockerfile
+  112  ls
+  113  vim Dockerfile
+  114  docker image ls
+  115  vim Dockerfile
+  116  docker build -t exlibris-apache .
+  117  docker run -dit --rm --name exlibris-apache-v1 -p 80:80 exlibris-apache
+  118  docker ps
+  119  docker run -dit --rm  -p 80:80 exlibris-apache
+  120  docker ps
+  121  docker run -dit --rm --name my-running-app -p 5555:80 exlibris-apache
+  122  docker ps
+  123  vim Dockerfile
+  124  ls
+  125  vim my-httpd.conf
+  126  vim Dockerfile
+  127  history
+  128  docker build -t exlibris-apache .
+  129  docker run -dit --rm --name exlibris-apache-v1 -p 5555:5555 exlibris-apac                                                                                                                     he
+  130  docker ps
+  131  docker ps -a
+  132  vim my-httpd.conf
+  133  docker build -t exlibris-apache .
+  134  docker run -dit --rm --name my-running-app -p 5555:80 exlibris-apache
+  135  docker ps
+  136  docker ps -a
+  137  vim Dockerfile
+  138  docker build -t exlibris-apache .
+  139  docker run -dit --rm --name my-running-app -p 5555:80 exlibris-apache
+  140  docker ps
+  141  docker stop my-running-app
+  142  ls
+  143  vim Dockerfile
+  144  vim d
+  145  vim Dockerfile
+  146  docker build -t exlibris-apache .
+  147  docker run -dit --rm --name my-running-app -p 5555:80 exlibris-apache
+  148  docker ps
+  149  docker exec -it my-running-app bash
+  150  docker stop my-running-app
+  151  vim Dockerfile
+  152  docker build -t exlibris-apache .
+  153  docker run -dit --rm --name my-running-app -p 5555:80 exlibris-apache
+  154  docker exec -it my-running-app bash
+  155  docker stop my-running-app
+  156  vim Dockerfile
+  157  vim my-httpd.conf
+  158  docker ps
+  159  #docker run --rm httpd:2.4 cat /usr/local/apache2/conf/httpd.conf > my-ht                                                                                                                     tpd.conf
+  160  docker run -dit --rm --name my-running-app -p 5555:80 exlibris-apache  ca                                                                                                                     t /usr/local/apache2/conf/httpd.conf > my-httpd.conf
+  161  docker ps
+  162  ls -ltr
+  163  vim Dockerfile
+  164  docker run -dit --rm --name exlibris-v1 -p 5555:80 exlibris-apache
+  165  docker ps
+  166  docker exec -it exlibris-v1 bash
+  167  ls
+  168  vim my-httpd.conf
+  169  ls
+  170  rm -fr my-httpd.conf
+  171  docker run --rm httpd:2.4 cat /usr/local/apache2/conf/httpd.conf > my-htt                                                                                                                     pd.conf
+  172  docker run --rm httpd:2.4.53 cat /usr/local/apache2/conf/httpd.conf > my-                                                                                                                     httpd.conf
+  173  cat my-httpd.conf
+  174  ls
+  175  cd exlibris_project/
+  176  ls
+  177  cd apache/
+  178  ls
+  179  docker ps
+  180  docker stop exlibris-v1
+  181  docker build -t exlibris-apache .
+  182  cat Dockerfile
+  183  cat my-httpd.conf
+  184  docker ps
+  185  vim my-httpd.conf
+  186  docker run -dit --rm --name exlibris-v1 -p 5555:80 exlibris-apache
+  187  docker ps
+  188  docker -it exlibris-v1 bash
+  189  docker exec -it exlibris-v1 bash
+  190  vim my-httpd.conf
+  191  docker ps
+  192  docker exec -it exlibris-v1 bash
+  193  vim my-httpd.conf
+  194  docker build -t exlibris-apache .
+  195  docker ps
+  196  docker stop exlibris-v1
+  197  docker run -dit --rm --name exlibris-v1 -p 5555:80 exlibris-apache
+  198  docker ps
+  199  docker stop exlibris-v1
+  200  vim my-httpd.conf
+  201  ls
+  202  cat my-httpd.conf
+  203  docker run --rm httpd:2.4.53 cat /usr/local/apache2/conf/extra/httpd-vhos                                                                                                                     ts.conf > httpd-vhosts.conf
+  204  ls -ltr
+  205  cat httpd-vhosts.conf
+  206  vim httpd-vhosts.conf
+  207  ls
+  208  vim Dockerfile
+  209  docker build -t exlibris-apache .
+  210  docker run -dit --rm --name exlibris-v1 -p 5555:80 exlibris-apache
+  211  docker ps
+  212  docker stop exlibris-v1
+  213  docker run -dit --rm --name exlibris-v1 -p 5555:5555 exlibris-apache
+  214  docker ps
+  215  docker stop exlibris-v1
+  216  vim httpd-vhosts.conf
+  217  vim my-httpd.conf
+  218  docker build -t exlibris-apache .
+  219  docker run -dit --rm --name exlibris-v1 -p 5555:5555 exlibris-apache
+  220  vim httpd-vhosts.conf
+  221  docker ps
+  222  docker exec -it exlibris-v1 bash
+  223  docker stop exlibris-v1
+  224  vim httpd-vhosts.conf
+  225  docker build -t exlibris-apache .
+  226  docker run -dit --rm --name exlibris-v1 -p 5555:5555 exlibris-apache
+  227  docker ps
+  228  docker exec -it exlibris-v1 bash
+  229  ls
+  230  vim my-httpd.conf
+  231  docker build -t exlibris-apache .
+  232  docker run -dit --rm --name exlibris-v1 -p 5555:5555 exlibris-apache
+  233  docker stop
+  234  docker ps
+  235  docker stop exlibris-v1
+  236  docker run -dit --rm --name exlibris-v1 -p 5555:5555 exlibris-apache
+  237  docker ps
+  238  docker exec -it exlibris-v1 bash
+  239  vim my-httpd.conf
+  240  vim httpd-vhosts.conf
+  241  vim my-httpd.conf
+  242  docker build -t exlibris-apache .
+  243  docker ps
+  244  docker stop exlibris-v1
+  245  docker run -dit --rm --name exlibris-v1 -p 5555:5555 exlibris-apache
+  246  docker ps
+  247  ls
+  248  vim httpd-vhosts.conf
+  249  docker build -t exlibris-apache .
+  250  docker ps
+  251  docker stop exlibris-v1
+  252  docker run -dit --rm --name exlibris-v1 -p 5555:5555 exlibris-apache
+  253  docker ps
+  254  docker stop exlibris-v1
+  255  vim httpd-vhosts.conf
+  256  docker build -t exlibris-apache .
+  257  docker run -dit --rm --name exlibris-v1 -p 5555:5555 exlibris-apache
+  258  docker ps
+  259  docker exec -it exlibris-v1 bash
+  260  ls
+  261  vim httpd-vhosts.conf
+  262  docker stop exlibris-v1
+  263  docker build -t exlibris-apache .
+  264  docker run -dit --rm --name exlibris-v1 -p 5555:5555 exlibris-apache
+  265  docker exec -it exlibris-v1 bash
+  266  ls
+  267  vim httpd-vhosts.conf
+  268  docker stop exlibris-v1
+  269  docker build -t exlibris-apache .
+  270  docker run -dit --rm --name exlibris-v1 -p 5555:5555 exlibris-apache
+  271  docker ps
+  272  docker exec -it exlibris-v1 bash
+  273  vim my-httpd.conf
+  274  vim httpd-vhosts.conf
+  275  vim my-httpd.conf
+  276  vim httpd-vhosts.conf
+  277  docker build -t exlibris-apache .
+  278  docker stop exlibris-v1
+  279  docker run -dit --rm --name exlibris-v1 -p 5555:5555 exlibris-apache
+  280  docker exec -it exlibris-v1 bash
+  281  vim httpd-vhosts.conf
+  282  vim my-httpd.conf
+  283  vim httpd-vhosts.conf
+  284  docker ps
+  285  docker exec -it exlibris-v1 bash
+  286  vim httpd-vhosts.conf
+  287  docker stop exlibris-v1
+  288  docker build -t exlibris-apache .
+  289  docker run -dit --rm --name exlibris-v1 -p 5555:5555 exlibris-apache
+  290  docker exec -it exlibris-v1 bash
+  291  vim httpd-vhosts.conf
+  292  docker exec -it exlibris-v1 bash
+  293  vim my-httpd.conf
+  294  vim httpd-vhosts.conf
+  295  docker build -t exlibris-apache .
+  296  docker stop exlibris-v1
+  297  docker run -dit --rm --name exlibris-v1 -p 80:80 exlibris-apache
+  298  history | grep my
+  299  docker run --rm httpd:2.4.53 cat /usr/local/apache2/conf/httpd.conf > my-                                                                                                                     httpd.conf
+  300  ls
+  301  history | grep httpd-vhosts.conf
+  302   docker run --rm httpd:2.4.53 cat /usr/local/apache2/conf/extra/httpd-vho                                                                                                                     sts.conf > httpd-vhosts.conf
+  303  ls
+  304  vim httpd-vhosts.conf
+  305  vim my-httpd.conf
+  306  docker ps
+  307  vim my-httpd.conf
+  308  cat Dockerfile
+  309  docker build -t exlibris-apache .
+  310  docker ps
+  311  docker stop exlibris-v1
+  312  docker run -dit --rm --name exlibris-v1 -p 5555:5555 exlibris-apache
+  313  vim httpd-vhosts.conf
+  314  docker stop exlibris-v1
+  315  #docker run -dit --rm --name exlibris-v1 -p 5555:5555 -p 80:80 exlibris-a                                                                                                                     pache
+  316  vim httpd-vhosts.conf
+  317  docker build -t exlibris-apache .
+  318  docker ps
+  319  #docker run -dit --rm --name exlibris-v1 -p 5555:5555 -p 80:80 exlibris-a                                                                                                                     pache
+  320  docker run -dit --rm --name exlibris-v1 -p 5555:5555 -p 80:80 exlibris-ap                                                                                                                     ache
+  321  vim httpd-vhosts.conf
+  322  docker build -t exlibris-apache .
+  323  docker stop exlibris-v1
+  324  docker run -dit --rm --name exlibris-v1 -p 5555:5555 -p 80:80 exlibris-ap                                                                                                                     ache
+  325  docker exec -it exlibris-v1 bash
+  326  ls
+  327  vim httpd-vhosts.conf
+  328  docker exec -it exlibris-v1 bash
+  329  vim Dockerfile
+  330  vim my-httpd.conf
+  331  vim httpd-vhosts.conf
+  332  docker stop exlibris-v1
+  333  docker build -t exlibris-apache .
+  334  docker run -dit --rm --name exlibris-v1 -p 5555:5555 -p 80:80 exlibris-ap                                                                                                                     ache
+  335  cat my-httpd.conf
+  336  cat httpd-vhosts.conf
+  337  ls
+  338  vim my-httpd.conf
+  339  ls
+  340  vim httpd-vhosts.conf
+  341  docker ps
+  342  docker stop exlibris-v1
+  343  docker ps
+  344  cat httpd-vhosts.conf
+  345  ls
+  346  vim my-httpd.conf
+  347  docker ps
+  348  docker build -t exlibris-apache .
+  349  docker run -dit --rm --name exlibris-v1 -p 5555:5555 -p 80:80 exlibris-ap                                                                                                                     ache
+  350  docekr ps
+  351  docker ps
+  352  ls
+  353  vim httpd-vhosts.conf
+  354  vim Dockerfile
+  355  docker stop exlibris-v1
+  356  docker build -t exlibris-apache .
+  357  docker run -dit --rm --name exlibris-v1 -p 5555:5555 -p 80:80 exlibris-ap                                                                                                                     ache
+  358  ls
+  359  docker --version
+  360  ls
+  361  cd docker-compose-poc
+  362  mkdir docker-compose-poc
+  363  cd docker-compose-poc
+  364  ls
+  365  vim version: '3'
+  366  ls
+  367  vim docker-compose.yml
+  368  cd ..
+  369  ls
+  370  cay Dockerfile
+  371  cat Dockerfile
+  372  cd docker-compose-poc/
+  373  ls
+  374  vim docker-compose.yml
+  375  docker image ls
+  376  ls
+  377  cd ..
+  378  ls
+  379  cat Dockerfile
+  380  ls
+  381  cp -a Dockerfile docker-compose-poc/.
+  382  cd docker-compose-poc/
+  383  ls
+  384  vim Dockerfile
+  385  cd ..
+  386  ls
+  387  cp -a feeds.json docker-compose-poc/.
+  388  ls
+  389  cat Dockerfile
+  390  cd docker-compose-poc/
+  391  l
+  392  sls
+  393  ls
+  394  vim Dockerfile
+  395  ls
+  396  vim docker-compose.yml
+  397  cd ..
+  398  ls
+  399  #docker run -dit --rm --name exlibris-v1 -p 5555:5555 -p 80:80 exlibris-a                                                                                                                     pache
+  400  echo "docker run -dit --rm --name exlibris-v1 -p 5555:5555 -p 80:80 exlib                                                                                                                     ris-apache" > exlibris-apache-docker-run-command.sh
+  401  ls
+  402  chmod +x exlibris-apache-docker-run-command.sh
+  403  ls -la
+  404  cat exlibris-apache-docker-run-command.sh
+  405  cd docker-compose-poc/
+  406  ls
+  407  vim docker-compose.yml
+  408  cat Dockerfile
+  409  docker build -t  exlibris-apache-compose-img:1.0 .
+  410  docker image ls
+  411  ls
+  412  docker ps
+  413  docker stop exlibris-v1
+  414  docker-compose up
+  415  vim docker-compose.yml
+  416  docker-compose up
+  417  vim docker-compose.yml
+  418  docker-compose up
+  419  vim docker-compose.yml
+  420  docker-compose up
+  421  ls
+  422  ls config-files/
+  423  cd config-files/
+  424  ls -la
+  425  cd httpd-vhosts.conf/
+  426  ls
+  427  cd ..
+  428  ls
+  429  rm -fr *
+  430  sudo rm -fr *
+  431  ls
+  432  cd ..
+  433  ls
+  434  cp ../httpd-vhosts.conf ./config-files/.
+  435  sudo cp ../httpd-vhosts.conf ./config-files/.
+  436  sudo cp ../my-httpd.conf ./config-files/.
+  437  ls
+  438  cd config-files/
+  439  ls
+  440  ls -la
+  441  cd ..
+  442  ls
+  443  ls -la
+  444  cd ..
+  445  chmod -R ec2-user:ec2-user docker-compose-poc/
+  446  chmod -R ec2-user docker-compose-poc/
+  447  chown -R ec2-user:ec2-user docker-compose-poc/
+  448  sudo chown -R ec2-user:ec2-user docker-compose-poc/
+  449  ls
+  450  cd docker-compose-poc/
+  451  ls
+  452  docker-compose up
+  453  docker ps
+  454  ls
+  455  docker-compose up
+  456  docker-compose up -d
+  457  docker ps
+  458  docker-compose down
+  459  docker ps
+  460  ls
+  461  vim config-files/my-httpd.conf
+  462  docker ps
+  463  docker-compose up -d
+  464  docker-compose down
+  465  docker-compose up
+  466  docker ps
+  467  ls
+  468  cd ..
+  469  ls
+  470  pwd
+  471  cp -au docker-compose-poc/ ../.
+  472  cd ..
+  473  ls
+  474  mv docker-compose-poc/ apache-v2.0
+  475  ls
+  476  cd apache-v2.0/
+  477  ls
+  478  docker ps
+  479  docker-compose up
+  480  docker ps
+  481  docker rm "ad010aa0b5bb0d5e43534970f91ef2fa1218d5e893fb4b5fe24f6a91cfdfea                                                                                                                     b9"
+  482  docker-compose up
+  483  ls
+  484  cat docker-compose.yml
+  485  ls
+  486  cd ..
+  487  ls
+  488  mv apache apache-v1.0
+  489  ls
+  490  cd apache-v1.0/
+  491  ls
+  492  rm -fr docker-compose-poc/
+  493  ls
+  494  cat exlibris-apache-docker-run-command.sh
+  495  ls
+  496  cat Dockerfile
+  497  cat httpd-vhosts.conf
+  498  cat my-httpd.conf
+  499  docker ps
+  500  ls
+  501  cd exlibris_project/apache-v2.0/
+  502  ls
+  503  docker-compose down
+  504  ls
+  505  vim Dockerfile
+  506  ls
+  507  vim docker-compose.yml
+  508  ls
+  509  cd config-files/
+  510  ls
+  511  vim httpd-vhosts.conf
+  512  ls
+  513  vim my-httpd.conf
+  514  ls
+  515  c d..
+  516  cd ..
+  517  ls
+  518  vim Dockerfile
+  519  docker-compose up -d
+  520  docker ps
+  521  ls
+  522  cat docker-compose.yml
+  523  docker ps
+  524  docker exec -it apache-exl bash
+  525  ls
+  526  cd config-files/
+  527  ls
+  528  cd ..
+  529  ls
+  530  cd ..
+  531  ls
+  532  history
+  533  uname -s
+  534  uname -m
+  535  git
+  536  yum install git
+  537  sudo yum install git
+  538  docker ps
+  539  docker-compose down
+  540  cd apache-v2.0/
+  541  ls
+  542  docker-compose down
+  543  c d..
+  544  cd ..
+  545  ls
+  546  git init
+  547  git add .
+  548  git commit -m "apache server done"
+  549  git config --global --edit
+  550   git commit --amend --reset-author
+  551  git branch
+  552  git log
+  553   git commit --amend --reset-author
+  554  ls -la
+  555  rm -fr .git/
+  556  git config --global --edit
+  557  git init
+  558  git add .
+  559  git commit -m "apache server done"
+  560  git remote add origin https://github.com/jorzel-87/exlibris_project.git
+  561  git push -u origin master
+  562  cd
+  563  ls
+  564  vim .gitconfig
+  565  git config --global credential.helper store
+  566  cd exlibris_project/
+  567  ls -la
+  568  git push -u origin master
+  569  cat ~/.git-credentials
+  570  ls
+  571  ls -la
+  572  docker ps
+  573  ls
+  574  cd apache-v2.0/
+  575  ls
+  576  docker-compose up
+  577  python
+  578  python --version
+  579  python3 --version
+  580  ls
+  581  docker-compose up
+  582  history
+  583  history | grep docker
+  584  history | grep yum
+  585  ls
+  586  cd ..
+  587  ls
+  588  mkdir jenkins-v1.0
+  589  top
+  590  free -m
+  591  top
+  592  ls
+  593  rm -fr jenkins-v1.0/
+  594  ls
+  595  pwd
+  596  ls
+  597  cd apache-v
+  598  cd apache-v2.0/
+  599  ls
+  600  cat docker-compose.yml
+  601  cat Dockerfile
+  602  ls
+  603  cat docker-compose.yml
+  604  vim docker-compose.yml
+  605  docker ps
+  606  docker-compose up -d
+  607  ls
+  608  cd exlibris_project/
+  609  ls
+  610  cat .git-credentials
+  611  cat .gitconfig
+  612  vim .gitconfig
+  613  docker image ls
+  614  history
+

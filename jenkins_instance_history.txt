@@ -1,0 +1,247 @@
+    1  ls
+    2  sudo yum update
+    3  sudo yum install docker
+    4  sudo systemctl enable docker.service
+    5  sudo systemctl start docker.service
+    6  sudo usermod -aG docker ${USER}
+    7  docker ps
+    8  wget https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)
+    9  sudo mv docker-compose-$(uname -s)-$(uname -m) /usr/local/bin/docker-compose
+   10  sudo chmod -v +x /usr/local/bin/docker-compose
+   11  docker-compose 
+   12  ls
+   13  mkdir /home/ec2-user/exlibris_project
+   14  ls
+   15  cd exlibris_project/
+   16  ls
+   17  mkdir jenkins-v1.0
+   18  cd jenkins-v1.0/
+   19  ls
+   20  vim docker-compose.yml
+   21  ls
+   22  ps
+   23  ps aux
+   24  docker ps
+   25  curl -Iv http://3.64.207.71:5555/exl_hands_on_lab/feeds.json
+   26  curl http://3.64.207.71:5555/exl_hands_on_lab/feeds.json
+   27  ls
+   28  cd exlibris_project/
+   29  ls
+   30  cd jenkins-v1.0/
+   31  ls
+   32  cat docker-compose.yml 
+   33  docker pull jenkins/jenkins:2.341-jdk11
+   34  vim docker-compose.yml 
+   35  docker-compose up
+   36  vim docker-compose.yml 
+   37  docker-compose up
+   38  ls
+   39  cd exlibris_project/
+   40  ls
+   41  git 
+   42  sudo yum install git
+   43  cd
+   44  vim .git-credentials
+   45  vim .gitconfig
+   46  cd exlibris_project/
+   47  ls
+   48  mkdir nginx-proxy
+   49  ls
+   50  cd nginx-proxy/
+   51  ls
+   52  vim docker-compose-yml
+   53  cat docker-compose-yml 
+   54  vim docker-compose-yml
+   55  ls
+   56  cd ..
+   57  ls
+   58  cd jenkins-v1.0/
+   59  ls
+   60  vim docker-compose.yml 
+   61   docker network create exlibris-service-network
+   62  vim docker-compose.yml 
+   63  cd ..
+   64  ls
+   65  cat nginx-proxy/docker-compose-yml 
+   66  :q
+   67  ;ls
+   68  ls
+   69  cd jenkins-v1.0/
+   70  vim docker-compose.yml 
+   71  ls
+   72  cd ..
+   73  ls
+   74  cat nginx-proxy/docker-compose-yml 
+   75  ls
+   76  vim jenkins-v1.0/docker-compose.yml 
+   77  ls
+   78  docker ps
+   79  ls
+   80  cd exlibris_project/
+   81  ls
+   82  cd jenkins-v1.0/
+   83  ls
+   84  docker-compose down
+   85  ls
+   86  docker ps
+   87  vim docker-compose.yml 
+   88  ls
+   89  cd ..
+   90  ls
+   91  cd nginx-proxy/
+   92  ls
+   93  vim docker-compose-yml 
+   94  docker ps
+   95  docker kill fed28e58b4ad
+   96  ls
+   97  docker-compose up
+   98  mv docker-compose-yml docker-compose.yml 
+   99  docker-compose up
+  100  ls
+  101  cd volumes/
+  102  ls
+  103  cd dhparam/
+  104  ls
+  105  cd ..
+  106  rm -fr my_custom_proxy_settings.conf/
+  107  sudo rm -fr my_custom_proxy_settings.conf/
+  108  ls
+  109  cd ..
+  110  ls
+  111  vim docker-compose.yml 
+  112  cd ..
+  113  ls
+  114  docker ps
+  115  ls
+  116  cd jenkins-v1.0/
+  117  ls
+  118  vim docker-compose.yml 
+  119  docker-compose up -d
+  120  vim docker-compose.yml 
+  121  docker-compose up -d
+  122  vim docker-compose.yml 
+  123  docker-compose up -d
+  124  python3
+  125  ls
+  126  pwd
+  127  cd exlibris_project/
+  128  ls
+  129  docker volume ls
+  130  sudo -i
+  131  ls
+  132  cd jenkins-v1.0/
+  133  ls
+  134  vim docker-compose.yml 
+  135  l
+  136  ls
+  137  touch Dockerfile
+  138  cat docker-compose.yml 
+  139  vim docker-compose.yml 
+  140  vim Dockerfile 
+  141  docker ps
+  142  docker exec -it 3c00a6479526 bash
+  143  vim Dockerfile 
+  144   docker build -t  exlibris-jenkins-compose-img:1.0 .
+  145  docker p
+  146  docker ps
+  147  docker exec -it 3c00a6479526 bash
+  148  vim Dockerfile 
+  149   docker build -t  exlibris-jenkins-compose-img:1.0 .
+  150  docker exec -it 3c00a6479526 bash
+  151  docker ps
+  152  #docker commit 3c00a6479526  test
+  153  cat Dockerfile 
+  154  cat docker-compose.yml 
+  155  docker image ls
+  156  docker commit 3c00a6479526  exlibris-jenkins-with-python3-compose-img
+  157  docker image ls
+  158  docker commit 3c00a6479526  exlibris-jenkins-with-python3-compose-img:1.0
+  159  docker image ls
+  160  vim docker-compose.yml 
+  161  docker-compose down
+  162  docker-compose up
+  163  cat .git-credentials 
+  164  ls
+  165  cat .gitconfig 
+  166  cat .git-credentials 
+  167  docker ps
+  168  docker exec -it 359f8d085cad bash
+  169  ls
+  170  cd exlibris_project/
+  171  ls
+  172  cd jenkins-v1.0/
+  173  ls
+  174  docker ps
+  175  docker exec -it 359f8d085cad bash
+  176  ls
+  177  docker ps
+  178  cd exlibris_project/
+  179  ls
+  180  cd jenkins-v1.0/
+  181  ls
+  182  docker-compose down
+  183  docker ps
+  184  ls
+  185  vim docker-compose.yml 
+  186  vim Dockerfile 
+  187  ls
+  188  docker-compose up -d
+  189  ls
+  190  docker ps
+  191  docker exec -it d4394935efb8 bash
+  192  #docker commit 3c00a6479526  exlibris-jenkins-with-python3-compose-img:1.0
+  193  docker ps
+  194  docker exec -it d4394935efb8 bash
+  195  docker ps
+  196  docker commit d4394935efb8 exlibris-jenkins-with-python3-compose-img:1.0
+  197  docker images ls
+  198  docker images
+  199  ls
+  200  cat Dockerfile 
+  201  docker ps
+  202  docker-compose down
+  203  ls
+  204  cat docker-compose.yml 
+  205  docker-compose up -d
+  206  docker ps
+  207  docker exec -it a7c905869cf8 bash
+  208  history
+  209  docker ps
+  210  docker exec -it a7c905869cf8 bash
+  211  ls
+  212  #docker commit d4394935efb8 exlibris-jenkins-with-python3-compose-img:1.0
+  213  cd exlibris_project/
+  214  ls
+  215  rm -fr nginx-proxy/
+  216  sudo rm -fr nginx-proxy/
+  217  ls
+  218  cd jenkins-v1.0/
+  219  ls
+  220  cat Dockerfile 
+  221  vim Dockerfile 
+  222  ls
+  223  cat docker-compose.yml 
+  224  vim docker-compose.yml 
+  225  ls
+  226  cd ..
+  227  ls
+  228  git init
+  229  ls
+  230  ls -la
+  231  rm -fr .git/
+  232  git pull https://github.com/jorzel-87/exlibris_project.git
+  233  git clone https://github.com/jorzel-87/exlibris_project.git
+  234  ls
+  235  cd exlibris_project/
+  236  ls
+  237  cp -au ../jenkins-v1.0/ .
+  238  ls
+  239  git commit -m "jenkins instance"
+  240  git add .
+  241  git commit -m "jenkins instance"
+  242  git push
+  243  history | grep build
+  244  ls
+  245  vim README.md
+  246  history 
+  247  history > jenkins_instance_history.txt
