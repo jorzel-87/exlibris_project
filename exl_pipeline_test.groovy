@@ -50,7 +50,7 @@ pipeline {
                 }    
             }
         }
-        stage('Checkout exl_feed_ctl') {
+        stage('Processing') {
             steps {
                 git branch: 'master',
                     credentialsId: '37e4f5ce-c088-49b5-88a5-67c49badc606',
@@ -59,7 +59,7 @@ pipeline {
                 sh "./exl_feed_ctl.py ${OPT} ${ARGS}"
             }
         }
-        stage('Display YAML file') {
+        stage('Post-processing') {
             steps {
                 script {
                 println "Checking if feed.json file is present"
