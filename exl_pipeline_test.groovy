@@ -7,7 +7,7 @@ def WHEATHER_API_KEY="ba12adb54ba864479838324a5909608f"
 pipeline {
     agent any
     parameters {
-        string(defaultValue: "20.0", description: 'Maximum Temperature Allowed in Celsius, please use regular numbers or dot separated', name: 'MAX_TEMP')
+        string(defaultValue: "25.0", description: 'Maximum Temperature Allowed in Celsius, please use integers or float numbers', name: 'MAX_TEMP')
         choice(choices: ['list', 'set'], description: 'Operation type', name: 'OPT')
         string(defaultValue: "", description: "Operation arguments, for 'list': specify only <field name>, for 'set' specify <id> <field name> <field desired value>", name: 'ARGS')
     }
